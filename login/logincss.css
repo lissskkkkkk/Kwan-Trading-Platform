@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+form {
+    background-color: white;
+    padding: 20px;
+    width: 300px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #34495e;
+    font-weight: bold;
+}
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #2980b9;
+}
+p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+.register-link {
+    margin-top: 20px;
+    text-align: center;
+}
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.music-home-button {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background-color: rgba(74, 144, 226, 0.9);
+    color: white;
+    padding: 12px 18px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 24px;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.music-home-button:hover {
+    background-color: rgba(53, 122, 232, 0.9);
+    transform: scale(1.1) rotate(10deg);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}

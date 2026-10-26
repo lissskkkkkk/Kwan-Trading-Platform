@@ -1,0 +1,43 @@
+<html>  
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" href="logincss.css">
+    <title>login</title>
+  </head>
+  <body>
+  <a href="../main.html" class="music-home-button" title="home"><i class="fas fa-music"></i></a>
+  <form method="post" id="loginForm" action="logindb.php">
+    <label for="username">username:</label><input type="text" id="username" name="username"><br>
+    <p id="message1"></p>
+    <label for ="password">password:</label><input type="password" id="password" name="password"><br>
+    <p id="message2"></p>
+    <button type="submit">submit</button><br>
+  </form>
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+     let usernameinput=document.getElementById("username").value
+     if (usernameinput ===""){
+          event.preventDefault();
+          document.getElementById("message1").textContent="please enter username";
+          document.getElementById("message1").style.color="red";
+     }else{
+          document.getElementById("message1").textContent="done";
+          document.getElementById("message1").style.color="green";
+     }
+     let passwordinput=document.getElementById("password").value
+     if (passwordinput ===""){
+          event.preventDefault();
+          document.getElementById("message2").textContent="please enter password";
+          document.getElementById("message2").style.color="red";
+     }else{
+          document.getElementById("message2").textContent="done";
+          document.getElementById("message2").style.color="green";
+     }
+});
+  </script>
+  <div class="register-link">
+  <p>don't have a account?</p>
+  <a href="../register/register.html">click here</a>
+  </div>
+  </body>
+</html>
